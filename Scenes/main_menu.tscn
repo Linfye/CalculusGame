@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://oukon7cdbnpg"]
+
+[ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="1_5ljjg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0e77u"]
+font_size = 50
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="GameName" type="Label" parent="."]
+offset_right = 1152.0
+offset_bottom = 256.0
+text = "A Calculus Game"
+label_settings = SubResource("LabelSettings_0e77u")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Start" type="Button" parent="."]
+offset_left = 408.0
+offset_top = 256.0
+offset_right = 744.0
+offset_bottom = 384.0
+text = "Start"
+
+[node name="Exit" type="Button" parent="."]
+offset_left = 408.0
+offset_top = 440.0
+offset_right = 744.0
+offset_bottom = 568.0
+text = "Exit"
+script = ExtResource("1_5ljjg")
+
+[connection signal="pressed" from="Start" to="Exit" method="_on_start_pressed"]
+[connection signal="pressed" from="Exit" to="Exit" method="_on_exit_pressed"]

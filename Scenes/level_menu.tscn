@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=3 uid="uid://cikdf7pm7guhp"]
+
+[ext_resource type="Script" path="res://Scripts/LevelMenu.gd" id="1_3cssh"]
+
+[node name="LevelMenu" type="Node2D"]
+
+[node name="Return" type="Button" parent="."]
+offset_left = 1000.0
+offset_top = 32.0
+offset_right = 1096.0
+offset_bottom = 88.0
+text = "Return"
+script = ExtResource("1_3cssh")
+
+[node name="Intro" type="Button" parent="."]
+offset_left = 480.0
+offset_top = 128.0
+offset_right = 672.0
+offset_bottom = 192.0
+text = "Introduction"
+
+[node name="Zeno" type="Button" parent="."]
+offset_left = 480.0
+offset_top = 256.0
+offset_right = 672.0
+offset_bottom = 320.0
+text = "Zeno's Paradox"
+
+[node name="Limit" type="Button" parent="."]
+offset_left = 480.0
+offset_top = 384.0
+offset_right = 672.0
+offset_bottom = 448.0
+text = "The Limit"
+
+[node name="Circle" type="Button" parent="."]
+offset_left = 480.0
+offset_top = 512.0
+offset_right = 672.0
+offset_bottom = 576.0
+text = "Area of Circle"
+
+[connection signal="pressed" from="Return" to="Return" method="_on_return_pressed"]
+[connection signal="pressed" from="Intro" to="Return" method="_on_intro_pressed"]
+[connection signal="pressed" from="Zeno" to="Return" method="_on_zeno_pressed"]
+[connection signal="pressed" from="Limit" to="Return" method="_on_limit_pressed"]
+[connection signal="pressed" from="Circle" to="Return" method="_on_circle_pressed"]
