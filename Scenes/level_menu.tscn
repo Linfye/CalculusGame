@@ -33,15 +33,15 @@ offset_right = 672.0
 offset_bottom = 448.0
 text = "The Limit"
 
-[node name="Circle" type="Button" parent="."]
+[node name="Unfinished" type="Button" parent="."]
 offset_left = 480.0
 offset_top = 512.0
 offset_right = 672.0
 offset_bottom = 576.0
-text = "Area of Circle"
+text = "To Be Completed"
 
 [connection signal="pressed" from="Return" to="Return" method="_on_return_pressed"]
 [connection signal="pressed" from="Intro" to="Return" method="_on_intro_pressed"]
 [connection signal="pressed" from="Zeno" to="Return" method="_on_zeno_pressed"]
 [connection signal="pressed" from="Limit" to="Return" method="_on_limit_pressed"]
-[connection signal="pressed" from="Circle" to="Return" method="_on_circle_pressed"]
+[connection signal="pressed" from="Unfinished" to="Return" method="_on_unfinished_pressed"]

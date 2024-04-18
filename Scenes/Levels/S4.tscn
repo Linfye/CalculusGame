@@ -1,3 +1,23 @@
-[gd_scene format=3 uid="uid://dlqdwou36le5x"]
+[gd_scene load_steps=2 format=3 uid="uid://dlqdwou36le5x"]
 
-[node name="S1" type="Node2D"]
+[ext_resource type="Script" path="res://Scripts/L4.gd" id="1_n4r7g"]
+
+[node name="S4" type="Node2D"]
+
+[node name="Start" type="Button" parent="."]
+offset_left = 1024.0
+offset_top = 64.0
+offset_right = 1088.0
+offset_bottom = 128.0
+text = "Start"
+script = ExtResource("1_n4r7g")
+
+[node name="Exit" type="Button" parent="."]
+offset_left = 1024.0
+offset_top = 192.0
+offset_right = 1088.0
+offset_bottom = 256.0
+text = "Exit"
+
+[connection signal="pressed" from="Start" to="Start" method="_on_start_pressed"]
+[connection signal="pressed" from="Exit" to="Start" method="_on_exit_pressed"]

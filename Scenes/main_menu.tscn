@@ -21,6 +21,7 @@ offset_top = 256.0
 offset_right = 744.0
 offset_bottom = 384.0
 text = "Start"
+script = ExtResource("1_5ljjg")
 
 [node name="Exit" type="Button" parent="."]
 offset_left = 408.0
@@ -28,7 +29,6 @@ offset_top = 440.0
 offset_right = 744.0
 offset_bottom = 568.0
 text = "Exit"
-script = ExtResource("1_5ljjg")
 
-[connection signal="pressed" from="Start" to="Exit" method="_on_start_pressed"]
-[connection signal="pressed" from="Exit" to="Exit" method="_on_exit_pressed"]
+[connection signal="pressed" from="Start" to="Start" method="_on_start_pressed"]
+[connection signal="pressed" from="Exit" to="Start" method="_on_exit_pressed"]

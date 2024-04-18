@@ -1,3 +1,42 @@
-[gd_scene format=3 uid="uid://cxwce3uyd551y"]
+[gd_scene load_steps=5 format=3 uid="uid://cxwce3uyd551y"]
 
-[node name="S1" type="Node2D"]
+[ext_resource type="Script" path="res://Scripts/L3.gd" id="1_4pnbe"]
+[ext_resource type="Texture2D" uid="uid://uloa5leekid0" path="res://Pics/Equation.jpg" id="2_cw4a4"]
+[ext_resource type="Texture2D" uid="uid://b5xd1olkpookp" path="res://Pics/Friend.png" id="3_qe8wk"]
+[ext_resource type="Texture2D" uid="uid://drorjhjt0hubf" path="res://Pics/Limit.jpg" id="4_q2w6o"]
+
+[node name="S3" type="Node2D"]
+
+[node name="Start" type="Button" parent="."]
+offset_left = 1024.0
+offset_top = 64.0
+offset_right = 1088.0
+offset_bottom = 128.0
+text = "Start"
+script = ExtResource("1_4pnbe")
+
+[node name="Exit" type="Button" parent="."]
+offset_left = 1024.0
+offset_top = 192.0
+offset_right = 1088.0
+offset_bottom = 256.0
+text = "Exit"
+
+[node name="Equation" type="Sprite2D" parent="."]
+position = Vector2(672, 144)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_cw4a4")
+
+[node name="Friend" type="Sprite2D" parent="."]
+position = Vector2(224, 136)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_qe8wk")
+
+[node name="Limit" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(512, 312)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_q2w6o")
+
+[connection signal="pressed" from="Start" to="Start" method="_on_start_pressed"]
+[connection signal="pressed" from="Exit" to="Start" method="_on_exit_pressed"]

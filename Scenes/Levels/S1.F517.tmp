@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://jv7dq5ftg40"]
+
+[ext_resource type="Script" path="res://Scripts/L1.gd" id="1_ii7km"]
+
+[node name="S1" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_top = 384.0
+offset_right = 1152.0
+offset_bottom = 648.0
+script = ExtResource("1_ii7km")

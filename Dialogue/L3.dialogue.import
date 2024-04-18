@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dbtbuuxyelvfs"
+path="res://.godot/imported/L3.dialogue-c8005298ad3302c010bc2359c8d544ca.tres"
+
+[deps]
+
+source_file="res://Dialogue/L3.dialogue"
+dest_files=["res://.godot/imported/L3.dialogue-c8005298ad3302c010bc2359c8d544ca.tres"]
+
+[params]
+
+defaults=true

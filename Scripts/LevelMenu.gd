@@ -27,5 +27,5 @@ func _on_limit_pressed():
 	get_tree().change_scene_to_file("res://Scenes//Levels//S3.tscn")
 
 
-func _on_circle_pressed():
+func _on_unfinished_pressed():
 	get_tree().change_scene_to_file("res://Scenes//Levels//S4.tscn")
